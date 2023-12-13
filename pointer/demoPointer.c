@@ -102,15 +102,7 @@ int main()
     return 0;
 #endif
 
-    // Q3:我要给字符串赋值 bug.
-    char *ptr2 = NULL;
-#if 0
-    ptr2 = "zhangsan";
-#else
-    strcpy(ptr2, "zhangsan");
-#endif
-    printf("ptr2:%s\n", ptr2);
-    
+
     // 堆空间
     // void *是一个指针，这个指针被称为万能指针
     char *ptr = (char *)malloc(sizeof(char) * BUFFER_SIZE);

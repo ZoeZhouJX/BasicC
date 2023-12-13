@@ -31,7 +31,21 @@ int main()
         printf("strlen(ptr):%ld\n",strlen(ptr));
     }
 #else
-//实现方式2:
+
+// Q3:我要给字符串赋值 bug.
+    char *ptr2 = NULL;
+#if 1
+    ptr2 = "zhangsan";
+    printf("&(zhangsan):%p\n", &("zhangsan"));
+    printf("ptr:%p\n", ptr2);
+#else
+    strcpy(ptr2, "zhangsan");
+#endif
+    printf("ptr2:%s\n", ptr2);
+
+
+#if 0
+    // 实现方式2:
     while(*ptr != '\0')
     {
         printf("%c", *ptr);
