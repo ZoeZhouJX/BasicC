@@ -53,5 +53,7 @@ int main()
     }
     printf("\n");
 #endif
+
+#endif
     return 0;
 }
