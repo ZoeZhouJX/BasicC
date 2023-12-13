@@ -105,7 +105,15 @@ int main()
 
     int num4 = calculateDiv(num1, num2);
     printf("snum4:%d\n", num4);
+
+    char *ptr = NULL;
+    int len = 0;
+    #if 1
+    len = strlen(ptr);
+    #else
+    int len = myString(ptr);
 #endif
+    printf("len:%d\n", len);
 
     return 0;
 }
