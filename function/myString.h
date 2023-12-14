@@ -12,9 +12,9 @@ int myStrlen(const char *pStr);
 int myStrcpy(char *dst, const char *src);
 
 /*字符串比较*/
-int myStrcmp();
+int myStrcmp(const char *dst, const char *src);
 
-/*字符串新增*/
-int myStrcat();
+/*字符串拼接*/
+int myStrcat(char *dst, const char *src);
 
 #endif
