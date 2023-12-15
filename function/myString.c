@@ -125,7 +125,7 @@ int myStrcat(char *dst2, const char *src2)
 
 int main()
 {
-#if 0
+#if 1
     char *pStr = "hello world";
     printf("len:%d\n", myStrlen(pStr));
 
