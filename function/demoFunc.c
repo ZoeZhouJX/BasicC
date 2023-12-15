@@ -57,6 +57,8 @@ typedef enum STATUS_CODE
 } STATUS_CODE;
 #endif
 
+
+
 int main()
 {
 #if 0
@@ -91,7 +93,7 @@ int main()
     int len = sizeof(status); 
 #endif
  
- #if 1
+#if 0
     int num1 = 50;
     int num2 = 60;
     int sum = calculateAdd(num1, num2);
@@ -108,12 +110,35 @@ int main()
 
     char *ptr = NULL;
     int len = 0;
-    #if 1
+    #if 0
     len = strlen(ptr);
-    #else
+    #endif
     int len = myString(ptr);
-#endif
+    
     printf("len:%d\n", len);
+#endif
+    return 0;
+}
 
+
+//函数
+int main()
+{
+    void printStr()
+    {
+        printf("hello world\n");
+    }
+
+    int choice = 0;
+
+    //函数指针就是钩子函数 主要用在回调函数中
+    //函数指针
+    void *(*func)(void *) = printStr;
+    func(NULL);
+
+    if (choice == 1)
+    {
+        printfStr(NULL);
+    }
     return 0;
 }
